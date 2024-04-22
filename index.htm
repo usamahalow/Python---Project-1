@@ -1,0 +1,50 @@
+<!--
+  -- Student Name: Usama Halow
+  -- Student ID: 041110532
+  -- Course: CST8209 - Web Programming I
+  -- Semester: 1
+  -- Assignment: Assignment 2: Calendar of Events – Part 2
+  -- Date Submitted:  4/05/2024
+  -->
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar App</title>
+    <link rel="stylesheet" href="assets/calendar.css">
+</head>
+<body>
+    <div id="clock"></div> <!-- Move the clock to the top -->
+    <div id="calendar"></div>
+    <!-- Add a container div to center the form -->
+    <div id="formContainer">
+        <form id="eventForm">
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" name="eventDate"><br><br>
+            <label for="eventTitle">Event Title:</label>
+            <input type="text" id="eventTitle" name="eventTitle"><br><br>
+            <label for="eventDescription">Event Description:</label><br>
+            <textarea id="eventDescription" name="eventDescription" rows="4" cols="50"></textarea><br><br>
+            <button type="submit">Submit</button>
+            <button type="button" id="clearButton">Clear</button>
+        </form>
+    </div>
+<div class="collapse" id="newEventCollapse">
+    <div class="card card-body">
+        <!-- Your form here -->
+        <form id="eventForm" class="needs-validation" novalidate>
+            <!-- Form fields -->
+        </form>
+    </div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+</div>
+    <script src="assets/jquery-3.7.1.js"></script>
+    <script src="assets/anime.js"></script>
+    <script src="assets/clock.js"></script>
+    <script src="assets/calendar.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,76 @@
+/*
+ * Student Name: Usama Halow
+ * Student ID: 41110532
+ * Course: CST8209 - Web Programming I
+ * Semester: 1
+ * Assignment: Assignment 3: Calendar of Events – Part 3
+ * Date Submitted:  4/5/2024
+ */
+
+
+#calendar, table {
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  width:80%;
+}
+th {
+  border-style:solid;
+  border-width:1px;
+  margin:10px;
+  padding:10px;
+}
+.day {
+  border-style:solid;
+  border-width:1px;
+  margin:10px;
+  padding:10px;  
+}
+.today {
+  background-color:palegreen;
+}
+.weekend {
+  color:gray;
+}
+
+#eventForm {
+  width: 50%; /* Set the width of the form */
+  margin: 10px auto; /* Add space at the top and center horizontally */
+  padding: 10px; /* Add padding */
+  background-color: #fff; /* Background color for the form */
+  border: 2px solid #ccc; /* Add outline border */
+}
+
+
+/* Add space between form fields */
+#eventForm label,
+#eventForm input,
+#eventForm textarea,
+#eventForm button {
+  display: block;
+  margin-bottom: 1px; /* Add space between each field */
+}
+
+/* Clock styles */
+#clock {
+  font-size: 50px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align:center;
+  animation: colorChangeAndMove 5s infinite alternate; /* Combined color change and movement animation */
+}
+
+@keyframes colorChangeAndMove {
+  0% {
+    color: #333; /* Initial color */
+    transform: translateX(0); /* Start position */
+  }
+  50% {
+    color: blue; /* Color change midway */
+    transform: translateX(-20px); /* Move left */
+  }
+  100% {
+    color: red; /* Final color */
+    transform: translateX(20px); /* Move right */
+  }
+}
